@@ -26,8 +26,8 @@ exports.AppModule = AppModule = __decorate([
                     ignoreTLS: true,
                     secure: true,
                     auth: {
-                        user: process.env.MAIL_USER_ID,
-                        pass: process.env.MAIL_PASS
+                        user: "tfttrainings@gmail.com",
+                        pass: "fiti ifxa xppz xvjw"
                     },
                 },
                 defaults: {
