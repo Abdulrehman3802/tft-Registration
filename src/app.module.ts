@@ -8,7 +8,7 @@ import { HandlebarsAdapter } from '@nestjs-modules/mailer/dist/adapters/handleba
   imports: [AuthModule,
     MailerModule.forRoot({
       transport: {
-          host: 'smtp.gmail.com',
+          host: 'gsmtp',
           port: 465,
           ignoreTLS: true,
           secure: true,
@@ -18,7 +18,7 @@ import { HandlebarsAdapter } from '@nestjs-modules/mailer/dist/adapters/handleba
           },
       },
       defaults: {
-          from: '"No Reply" <no-reply@gmail.com>',
+          from: '"TFT" <no-reply@gmail.com>',
       },
       preview: false,
       template: {

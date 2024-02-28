@@ -37,7 +37,7 @@ let AuthService = class AuthService {
             const user = await this.prismaService.students.create({
                 data: model
             });
-            await this.sendMail(user.email, "Free Trial For TFT", 'index', user.name);
+            await this.sendMail(user.email, "Registration for Free Session on TFT", 'index', user.name);
             if (!user) {
                 throw new common_1.NotImplementedException("Registration Failed!");
             }

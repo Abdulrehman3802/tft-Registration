@@ -21,7 +21,7 @@ exports.AppModule = AppModule = __decorate([
         imports: [auth_module_1.AuthModule,
             mailer_1.MailerModule.forRoot({
                 transport: {
-                    host: 'smtp.gmail.com',
+                    host: 'gsmtp',
                     port: 465,
                     ignoreTLS: true,
                     secure: true,
@@ -31,7 +31,7 @@ exports.AppModule = AppModule = __decorate([
                     },
                 },
                 defaults: {
-                    from: '"No Reply" <no-reply@gmail.com>',
+                    from: '"TFT" <no-reply@gmail.com>',
                 },
                 preview: false,
                 template: {
