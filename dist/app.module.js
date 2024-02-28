@@ -21,7 +21,7 @@ exports.AppModule = AppModule = __decorate([
         imports: [auth_module_1.AuthModule,
             mailer_1.MailerModule.forRoot({
                 transport: {
-                    host: 'gsmtp',
+                    host: 'smtp.gmail.com',
                     port: 465,
                     ignoreTLS: true,
                     secure: true,
